@@ -1,16 +1,30 @@
-use diary::{read_diary, write_diary_entry};
-use std::env;
-use std::process;
-
+ use clap::{App, Arg, SubCommand};
+use diary::{write_diary, read_diary};
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        println!("Please provide a diary entry");
-        process::exit(1);
+    let matches = App::new("Diary")
+        .version("0.1.0")
+        .author("Emma Wang")
+        .about("A simple diary application")
+        .subcommand(
+            SubCommand::with_name("write")
+                .about("write a diary entry")
+                .arg(
+                    Arg::with_name("entry")
+                        .help("the diary entry")
+                        .required(true)
+                        .index(1),
+                ),
+        )
+        .subcommand(SubCommand::with_name("read").about("read the diary"))
+        .get_matches();
+
+    if let Some(matches) = matches.subcommand_matches("write") {
+        let entry = matches.value_of("entry").unwrap();
+        write_diary(entry);
     }
 
-    let entry = &args[1..].join(" ");
-    write_diary_entry(entry);
-    read_diary();
+    if let Some(_matches) = matches.subcommand_matches("read") {
+        read_diary();
+    }
 }
