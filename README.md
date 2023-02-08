@@ -41,7 +41,9 @@ The project aims to build a useful command line tool to quickly record your diar
 
 <img width="917" src="https://user-images.githubusercontent.com/112578755/217573353-4b35f389-3a90-4bff-9831-a15c958c4896.png">
 
+
 ## Demo
+https://user-images.githubusercontent.com/112578755/217588218-d8a82f0a-1cb9-4818-a41f-a93d3aed0c4a.mp4
 
 ## References
 
