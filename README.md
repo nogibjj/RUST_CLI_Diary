@@ -23,6 +23,11 @@ The project aims to build a useful command line tool to quickly record your diar
 
  To write your diary   `cargo run -- write "type your diary"`
  To read your diary  `cargo run -- read`
+ 
+## Example Output
+<img width="917" src="https://user-images.githubusercontent.com/112578755/217573198-c6db4cf5-ef6f-4f65-bd66-fdc96c442bd5.png">
+
+<img width="917" src="https://user-images.githubusercontent.com/112578755/217573353-4b35f389-3a90-4bff-9831-a15c958c4896.png">
 
 ## Demo
 
