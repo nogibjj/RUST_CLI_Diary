@@ -4,8 +4,8 @@
 
 The project aims to build a useful command line tool to quickly record your diary with time stamp and you can recall it whenever you want;)
 
-## Diagram ![ids7021_project1](https://user-images.githubusercontent.com/112578755/217571003-b04d085b-0873-4596-96b2-8a41cad14040.jpg)
-
+## Diagram
+![ids7021_project1](https://user-images.githubusercontent.com/112578755/217571451-81eb31fa-48c5-4adb-b931-f3a1e6701eb2.jpg)
 
 ## Process
 
