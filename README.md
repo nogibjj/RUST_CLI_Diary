@@ -23,11 +23,13 @@ The project aims to build a useful command line tool to quickly record your diar
 * To run it in terminal, type:
 
  To write your diary   `cargo run -- write "type your diary"`
+
  To read your diary  `cargo run -- read`
  
  * It's also pushed to DockerHub, so you can simply run it by typing:
  
     `docker run emmawang00/rust_cli_diary write "type your thoughts here"`
+
     `docker run emmawang00/rust_cli_diary read` to see what you've been writing about.
  
 ## Example Output
