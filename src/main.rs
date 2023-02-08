@@ -1,5 +1,5 @@
- use clap::{App, Arg, SubCommand};
-use diary::{write_diary, read_diary};
+use clap::{App, Arg, SubCommand};
+use diary::{read_diary, write_diary};
 
 fn main() {
     let matches = App::new("Diary")

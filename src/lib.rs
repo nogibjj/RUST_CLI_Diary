@@ -1,8 +1,8 @@
 use std::fs::File;
+use std::fs::OpenOptions;
 use std::io::prelude::*;
 use std::io::BufReader;
 use std::path::Path;
-use std::fs::OpenOptions;
 
 pub fn write_diary(entry: &str) {
     let path = Path::new("diary.txt");
@@ -24,8 +24,6 @@ pub fn write_diary(entry: &str) {
     }
 }
 
-// read the diary entry based on date and time
-
 pub fn read_diary() {
     let file = File::open("diary.txt").unwrap();
     let reader = BufReader::new(file);
@@ -34,5 +32,3 @@ pub fn read_diary() {
         println!("{}", line.unwrap());
     }
 }
-
-
