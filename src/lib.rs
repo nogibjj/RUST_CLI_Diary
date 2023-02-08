@@ -25,6 +25,7 @@ pub fn write_diary(entry: &str) {
 }
 
 pub fn read_diary() {
+    let _path = Path::new("diary.txt");
     let file = File::open("diary.txt").unwrap();
     let reader = BufReader::new(file);
 
