@@ -22,9 +22,9 @@ The project aims to build a useful command line tool to quickly record your diar
 
 * To run it in terminal, type:
 
- To write your diary   `cargo run -- write "type your diary"`
+    To write your diary   `cargo run -- write "type your diary"`
 
- To read your diary  `cargo run -- read`
+    To read your diary  `cargo run -- read`
  
  * It's also pushed to DockerHub, so you can simply run it by typing:
  
@@ -32,6 +32,10 @@ The project aims to build a useful command line tool to quickly record your diar
 
     `docker run emmawang00/rust_cli_diary read` to see what you've been writing about.
  
+ * If you want to build a docker image on your own, type:
+
+    `docker build . -t diary`
+
 ## Example Output
 <img width="917" src="https://user-images.githubusercontent.com/112578755/217573198-c6db4cf5-ef6f-4f65-bd66-fdc96c442bd5.png">
 
