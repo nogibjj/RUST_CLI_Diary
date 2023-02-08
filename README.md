@@ -5,7 +5,7 @@
 The project aims to build a useful command line tool to quickly record your diary with time stamp and you can recall it whenever you want;)
 
 ## Diagram
-![ids7021_project1](https://user-images.githubusercontent.com/112578755/217571451-81eb31fa-48c5-4adb-b931-f3a1e6701eb2.jpg)
+![ids7021_project1](https://user-images.githubusercontent.com/112578755/217579770-e7f7b6c2-6687-49e1-8f31-910823bb33ab.jpg)
 
 ## Process
 
@@ -13,16 +13,22 @@ The project aims to build a useful command line tool to quickly record your diar
 
     `cargo init name -- "diary"`
 
-* Second, you wrote the needed RUST code, see main.rs and lib.rs. 
+* Second, you wrote the needed RUST code, see main.rs and lib.rs, and generate the `diary.txt`. 
 * We also need two other dependencies added to `Cargo.toml` file:
 
     `clap = {version="4.0.32", features=["derive"]}`
+    
     `chrono = "0.4.19"`
 
 * To run it in terminal, type:
 
  To write your diary   `cargo run -- write "type your diary"`
  To read your diary  `cargo run -- read`
+ 
+ * It's also pushed to DockerHub, so you can simply run it by typing:
+ 
+    `docker run emmawang00/rust_cli_diary write "type your thoughts here"`
+    `docker run emmawang00/rust_cli_diary read` to see what you've been writing about.
  
 ## Example Output
 <img width="917" src="https://user-images.githubusercontent.com/112578755/217573198-c6db4cf5-ef6f-4f65-bd66-fdc96c442bd5.png">
